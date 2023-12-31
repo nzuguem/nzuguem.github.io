@@ -1,0 +1,164 @@
+baseURL = "https://nzuguem.dev"
+title   = "Kevin NZUGUEM"
+languageCode = "fr-FR"
+defaultContentLanguage = "fr"
+theme = "hello-friend-ng"
+
+PygmentsCodeFences = true
+PygmentsStyle = "monokai"
+
+paginate  = 10
+rssLimit  = 10  # Maximum number of items in the RSS feed.
+
+# googleAnalytics = ""
+# disqusShortname = ""
+
+archetypeDir = "archetypes"
+contentDir   = "content"
+dataDir      = "data"
+layoutDir    = "layouts"
+publishDir   = "public"
+
+buildDrafts  = false
+buildFuture  = false
+buildExpired = false
+canonifyURLs = true
+
+enableRobotsTXT = true
+enableGitInfo   = false
+enableEmoji     = true
+enableMissingTranslationPlaceholders = false
+disableRSS     = false
+disableSitemap = false
+disable404     = false
+disableHugoGeneratorInject = false
+
+[permalinks]
+  posts = "/posts/:year/:month/:title/"
+
+[taxonomies]
+  tag      = "tags"
+  category = "categories"
+  series   = "series"
+
+[params]
+  [params.author]
+    name = "Kevin NZUGUEM"
+
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04"
+
+  # Subtitle for home
+  homeSubtitle = "Cloud Software Engineer"
+
+  # Metadata mostly used in document's head
+  # 
+  description = "Page d'accueil et blog de Kevin NZUGUEM"
+  keywords = "homepage, blog, science, informatics, development, programming"
+  images = [""]
+
+  disableReadOtherPosts = false
+
+  # Enable theme toggle
+  # 
+  # This options enables the theme toggle for the theme. 
+  # Per default, this option is off. 
+  # The theme is respecting the prefers-color-scheme of the operating system. 
+  # With this option on, the page user is able to set the scheme he wants. 
+  enableThemeToggle = false
+
+  # Sharing buttons
+  #
+  # There are a lot of buttons preconfigured. If you want to change them,
+  # generate the buttons here: https://sharingbuttons.io
+  # and add them into your own `layouts/partials/sharing-buttons.html`
+  #
+  enableSharingButtons = true
+
+  # Global language menu
+  #
+  # Enables the global language menu.
+  #
+  enableGlobalLanguageMenu = true
+
+  # Integrate Javascript files or stylesheets by adding the url to the external assets or by
+  # linking local files with their path relative to the static folder, e.g. "css/styles.css"
+  #
+  customCSS = []
+  customJS  = []
+
+  # Toggle this option need to rebuild SCSS, requires extended version of Hugo
+  #
+  justifyContent = true  # Set "text-align: justify" to .post-content.
+
+
+  # Custom footer 
+  # If you want, you can easily override the default footer with your own content. 
+  #
+  [params.footer]
+    trademark = 2024
+    rss = true
+    copyright = false
+    author = false
+
+    topText = []
+    bottomText = [
+      "Propulsé par <a href=\"http://gohugo.io\">Hugo</a>",
+      "Réalisé avec &#10084; par <a href=\"https://github.com/nzuguem\">Kevin NZUGUEM</a>"
+    ]
+
+  # Colors for favicons
+  #
+  [params.favicon.color]
+    mask = "#1b1c1d"
+    msapplication = "#1b1c1d"
+    theme = "#1b1c1d"
+
+  [params.logo]
+    logoMark     = ">"
+    logoText     = "$ cd /home/"
+    logoHomeLink = "/"
+
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Startpage portrait 
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  #
+  [params.portrait]
+     path     = "/img/me/nzuguem.png"
+     alt      = "Portrait"
+     maxWidth = "150px"
+
+  
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #  
+  # Addon: Social icons
+  # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+  #
+  [[params.social]]
+    name = "twitter"
+    url  = "https://twitter.com/nzuguemkevine"
+
+  [[params.social]]
+    name = "email"
+    url  = "mailto:nzuguemkevine@gmail.com"
+
+  [[params.social]]
+    name = "github"
+    url  = "https://github.com/nzuguem"
+
+  [[params.social]]
+    name = "linkedin"
+    url  = "https://www.linkedin.com/in/kevin-nzuguem-53711814b"
+
+
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    name       = "A propos"
+    url        = "about/"
+  #[[menu.main]]
+  #  identifier = "posts"
+  #  name       = "Posts"
+  #  url        = "posts/"
